@@ -1,0 +1,6 @@
+# Son ejemplos, ajustá según tu editor
+.DS_Store
+Thumbs.db
+.vscode/
+node_modules/
+dist/

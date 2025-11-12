@@ -1,0 +1,48 @@
+/* Variables de tema */
+:root {
+  --brand-bg: #0b0e12;
+  --brand-primary: #0d6efd;
+  --brand-accent: #00e0ff;
+  --brand-text: #e9ecef;
+  --spacing: 1rem;
+}
+
+/* Reseteos básicos + tipografía */
+html, body { height: 100%; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; }
+
+/* Hero con overlay */
+.hero {
+  min-height: 48vh;
+  background: linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.75)), url('/assets/img/hero.jpg') center/cover no-repeat;
+}
+
+/* Navbar active vía data-page */
+.nav-link.active, .nav-link[data-active="true"] {
+  color: var(--brand-accent) !important;
+}
+
+/* Card hover */
+.card { transition: transform .15s ease, box-shadow .2s ease; }
+.card:hover { transform: translateY(-2px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); }
+
+/* Utilidad: recorte de texto */
+.text-truncate-2 {
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+/* Modificadores */
+.btn--glow { box-shadow: 0 0 0 0 rgba(13,110,253,.6); animation: glow 2s infinite; }
+@keyframes glow { 0%{box-shadow:0 0 0 0 rgba(13,110,253,.6);} 70%{box-shadow:0 0 0 16px rgba(13,110,253,0);} 100%{box-shadow:0 0 0 0 rgba(13,110,253,0);} }
+
+/* Responsive tweaks */
+@media (min-width: 992px) {
+  .hero { min-height: 60vh; }
+}
+
+/* Footer */
+footer { border-top-color: rgba(255,255,255,.15) !important; }
+
+/* Formularios */
+.was-validated .form-control:invalid, .form-control.is-invalid { border-color: #dc3545; }
+.was-validated .form-control:valid, .form-control.is-valid { border-color: #198754; }

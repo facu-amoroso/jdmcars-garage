@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="JDMcars Garage - Comunidad y catálogo de autos JDM.">
+<link rel="icon" href="/assets/img/favicon.png">
+<title>JDMcars Garage</title>
+<!-- Bootstrap 5 CSS (CDN) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-DBjhm1gyeYH4H0iD4N1dH8kC1JbD0h1Q0oQYQy0Gz0g5oY9RZ4GQXKjJ0b4Sx6JQ" crossorigin="anonymous">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/assets/css/styles.css">
+
+  </head>
+  <body data-page="index">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="/index.html">JDMcars Garage</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" data-link="index" href="/index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" data-link="catalogo" href="/catalogo.html">Catálogo</a></li>
+        <li class="nav-item"><a class="nav-link" data-link="nosotros" href="/nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" data-link="contacto" href="/contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <header class="hero d-grid align-content-center">
+      <div class="container text-center text-light">
+        <h1 class="display-5 fw-bold">Pasión por los JDM</h1>
+        <p class="lead opacity-75">Specs, historia y cultura. Un garaje digital hecho con Bootstrap + CSS propio.</p>
+        <a href="/catalogo.html" class="btn btn-primary btn-lg">Ver catálogo</a>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <section class="mb-5">
+        <h2 class="h3 mb-3">Destacados</h2>
+        <div class="row g-4">
+          <!-- Cards demo -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <article class="card h-100 shadow-sm">
+              <img src="/assets/img/r34.jpg" class="card-img-top" alt="Nissan Skyline GT-R R34 en color azul">
+              <div class="card-body">
+                <h3 class="card-title h5">Nissan GT‑R R34</h3>
+                <p class="card-text small">RB26DETT • 276 hp (gentlemen's agreement) • AWD ATTESA E-TS.</p>
+                <a href="/catalogo.html#r34" class="btn btn-outline-primary btn-sm">Detalles</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <article class="card h-100 shadow-sm">
+              <img src="/assets/img/supra.jpg" class="card-img-top" alt="Toyota Supra MK4 color naranja">
+              <div class="card-body">
+                <h3 class="card-title h5">Toyota Supra MK4</h3>
+                <p class="card-text small">2JZ‑GTE • Twin‑Turbo • 6MT icónica.</p>
+                <a href="/catalogo.html#supra" class="btn btn-outline-primary btn-sm">Detalles</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <article class="card h-100 shadow-sm">
+              <img src="/assets/img/rx7.jpg" class="card-img-top" alt="Mazda RX-7 FD color rojo">
+              <div class="card-body">
+                <h3 class="card-title h5">Mazda RX‑7 FD</h3>
+                <p class="card-text small">13B‑REW • Rotary • Equilibrio y ligereza.</p>
+                <a href="/catalogo.html#rx7" class="btn btn-outline-primary btn-sm">Detalles</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <div class="p-4 p-md-5 bg-body-tertiary rounded-3 border">
+          <h2 class="h4">Tecnologías usadas</h2>
+          <ul class="mb-0 small">
+            <li>Bootstrap 5 (grillas, utilitarias y componentes)</li>
+            <li>CSS avanzado con variables, layout y componentes</li>
+            <li>Estructura semántica (header, main, section, article, footer, nav)</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-5 pt-4 pb-4 bg-dark text-light border-top">
+  <div class="container d-grid gap-3 gap-md-0 d-md-flex justify-content-between align-items-center">
+    <p class="mb-0 small opacity-75">© <span id="year"></span> JDMcars Garage — Todos los derechos reservados.</p>
+    <ul class="nav">
+      <li class="nav-item"><a class="nav-link link-light small" href="/privacidad.html">Privacidad</a></li>
+      <li class="nav-item"><a class="nav-link link-light small" href="/terminos.html">Términos</a></li>
+      <li class="nav-item"><a class="nav-link link-light small" href="/contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+</footer>
+
+
+    <!-- Bootstrap JS + Popper (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-yQ26Jv5vF7gq1oJx4CkN5f4oYpT3wzD3c7wQq1u9M6n9mKp7qf2+9h3YB7u3YQ0G" crossorigin="anonymous"></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
